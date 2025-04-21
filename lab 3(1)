@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int f, r;
+    float e;
+
+    printf("Введіть f: ");
+    scanf("%d", &f);
+    printf("Введіть r: ");
+    scanf("%d", &r);
+
+    if (f == 5)
+        e = 3 * f + 2 * r;
+    if (f == 0)
+        e = sqrt(8 * r) / (2 * f - 4);
+    if (f == -5)
+        e = f * r - 9;
+
+    printf("e = %.2f\n", e);
+
+    return 0;
+}
